@@ -1,11 +1,11 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import ToDoList from './components/ToDoList';
 
 function App() {
 
   const inputRef = useRef();
-  const [TodoList, SetTodoList] = useState([]);
+  const [TodoList, SetTodoList] = useState(localStorage.getItem("todos")? JSON.parse(localStorage.getItem("todos")) : []);
 
   const Add = ()=> {
     const inputText = inputRef.current.value.trim();
@@ -37,6 +37,10 @@ function App() {
       return todo;
     }))
   }
+
+  useEffect(()=>{
+    localStorage.setItem("todos",JSON.stringify(TodoList))
+  },[TodoList])
 
   return (
     <div className="App bg-slate-800 h-screen w-full flex justify-center items-center">
