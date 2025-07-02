@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/todo-list/static/css/main.a73e098d.css",
+    "main.js": "/todo-list/static/js/main.22d2b42d.js",
+    "index.html": "/todo-list/index.html",
+    "static/media/trash-can-regular.svg": "/todo-list/static/media/trash-can-regular.98bc4c13e9c25e69a82b3f61bfc51a12.svg",
+    "main.a73e098d.css.map": "/todo-list/static/css/main.a73e098d.css.map",
+    "main.22d2b42d.js.map": "/todo-list/static/js/main.22d2b42d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a73e098d.css",
+    "static/js/main.22d2b42d.js"
+  ]
+}
